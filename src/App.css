@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.topBarSection{
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -5px rgba(0,0,0,0.04);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  position: fixed;
+  width: 90%;
+  min-width: 80%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: white;
+}
+.companyTitle h2{
+  color: orangered;
+  text-decoration: none;
+}
+.itemSection{
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+  
+}
+.gallery{
+  width: 200px;
+
+}
+.gallery img{
+  width: 100%;
+}
+.landingSection{
+  padding: 0px 120px;
+}
+.chainSection{
+  /* border: 1px solid red; */
+  display: flex;
+  overflow-x: hidden;
+  position: relative;
+}
+.vendorBox{
+  /* border: 2px solid ; */
+  border-radius: 10px;
+}
+.vendorBox img{
+  width: 300px;
+  height: 200px;
+  flex: 0 0 auto;
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.btnSection{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 50px;
+  right: 10px;
+  gap: 10px;
+}
+.btnSection button{
+  border: none;
+  background: none;
+}
+.btnIcons{
+  font-size: x-large;
+}
+.firmSection{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:20px;
+  margin: 0 auto;
+}
+.filterButtons{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.filterButtons button{
+  width: 10rem;
+  padding: 5px 0;
+}
+.firmGroup{
+  position: relative;
+}
+.firmGroup img{
+  width:280px;
+  height: 180px;
+  flex: 0 0 auto;
+  margin-right: 30px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.firmDetails{
+  border: 1px solid red;
+}
+
+.firmOffer{
+  width: 100%;
+  color: white;
+  max-width: 85%;
+  position: absolute;
+  bottom: 5px;
+  padding-left: 10px;
+  font-size: 1rem;
+  font-weight: 800;
+  padding-bottom:10px;
+  padding-top: 20px;
+  background: transparent;
+  background: linear-gradient(to bottom, rgba(50,0,0,0.08), black);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-transform: uppercase;
+}
+.productSection{
+  display: flex;
+  flex-direction: column;
+  padding: 0 150px;
+  margin-top: 50px;
+}
+
+.productBox{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  border-top: 2px solid lightgray;
+  position: relative;
+}
+.productGroup img{
+    width: 100px; 
+    border-radius: 5px;
+}
+
+.addButton{
+  border: 1px solid lightgray;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  color: green;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  max-width: 80px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.link{
+  color: black;
+  text-decoration: none;
+}
+
+.loaderSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productSection h3{
+  text-align: center;
+  background-color: orange;
+  columns: white;
+}
+@media (max-width: 576px){
+  .topBarSection{
+    padding: 0 20px;
+    width: 100vw;
+  }
+  .itemSection{
+    margin-top: 80px;
+  }
+  .landingSection{
+    padding: 0 10px;
+  }
+  h3{
+    font-size: medium;
+    font-weight: 800;
+    color: rgb(34,30,30);
+  }
+  .chainSection{
+    overflow-x: scroll;
+    height: 190px;
+  }
+  .vendorBox img{
+    width: 260px;
+    height: 180px;
+    flex: 0 0 auto;
+    margin-right: 30px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .mediaChainSection{
+    margin-top: -30px;
+  }
+  .firmSection{
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    
+  }
+  
+  .firmOffer{
+    width: 100%;
+    max-width: 63%;
+    position: absolute;
+  }
+  .firmGroup img{
+    width: 100%;
+    height: 150px;
+  }
+  .productSection{
+    padding: 0 20px;
+  }  
+  .productSection h3{
+    text-align: center;
+    background-color: orange;
+    columns: white;
+  }
+  .filterButtons button{
+    width: 5rem;
+    padding: 5px ;
+    margin-right: 5px;
+  }
+  .productBox{
+    padding: 10px 20px;
+  }
+  .productGroup img{
+    width: 80px;
+  }
+  .addButton{
+    max-width: 60px;
+  }
+}
